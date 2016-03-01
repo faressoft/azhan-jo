@@ -1,6 +1,6 @@
 # Azhan Jo
 
-Display azhan times in Amman
+Get azhan times in Amman
 
 # Install Globally
 
