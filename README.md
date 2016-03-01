@@ -8,6 +8,10 @@ To be able to get azhan's times in your cli you have to install the package glob
 
 `npm install azhan-jo -g`
 
+To fetch and print prayer times you can use one of the commands
+
+`azhan` or `adan` or `adhan`
+
 # Usage
 
 Install the package to your project
