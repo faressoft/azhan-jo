@@ -1,5 +1,7 @@
 # Azhan Jo
 
+Display azhan times in Amman
+
 # Install Globally
 
 To be able to get azhan's times in your cli you have to install the package globally
@@ -11,6 +13,8 @@ To be able to get azhan's times in your cli you have to install the package glob
 Install the package to your project
 
 `npm install azhan-jo`
+
+Sample Code
 
 ```js
 var azhan = require('azhan-jo');
@@ -24,7 +28,6 @@ azhan.getPrayerTimes().then(function(result) {
   console.log(error);  
   
 });
-
 ```
 
 # License
