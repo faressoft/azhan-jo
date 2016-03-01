@@ -23,14 +23,41 @@ Sample Code
 ```js
 var azhan = require('azhan-jo');
 
-azhan.getPrayerTimes().then(function(result) {
-
-  console.log(result);
-
+azhan.getPrayerTimes().then(function(results) {
+  console.log(results);
 }).catch(function(error) {
-  
   console.log(error);  
-  
+});
+```
+# Methods
+
+### getTitles()
+Return an array of prayer titles
+['fajr', 'sunrise', 'dhuhr', 'asr', 'maghrib', 'isha']
+
+```js
+console.log(azhan.getTitles());
+```
+
+### getPrayerTimes()
+Fetch, parse, and return an object of prayer times through `Promise` object.
+
+```js
+azhan.getPrayerTimes().then(function(results) {
+  console.log(results);
+}).catch(function(error) {
+  console.log(error);  
+});
+```
+
+### getPrayerTime(title)
+Fetch, parse, and return an the time for a specefic prayer by its title through `Promise` object.
+
+```js
+azhan.getPrayerTime('fajr').then(function(result) {
+  console.log(result);
+}).catch(function(error) {
+  console.log(error);  
 });
 ```
 
