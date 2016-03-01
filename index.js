@@ -1,8 +1,8 @@
 'use strict';
 
 var cheerio = require('cheerio')
-  , fs      = require('fs')
-  , request = require('request');
+  , request = require('request')
+  , fs      = require('fs');
 
 /**
  * Titles of praying periods
