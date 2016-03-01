@@ -5,6 +5,12 @@ var cheerio = require('cheerio')
   , fs      = require('fs');
 
 /**
+ * The uri of the praying times
+ * @type {String}
+ */
+const URI = 'http://aliftaa.jo/PrayTimes.ashx';
+
+/**
  * Titles of praying periods
  * @type {Array}
  */
@@ -14,7 +20,7 @@ var titles = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
 // Get Data ////////////////////////////////////////
 ////////////////////////////////////////////////////
 
-request('http://aliftaa.jo/PrayTimes.ashx', function(error, response, body) {
+request(URI, function(error, response, body) {
 
   if (!error && response.statusCode == 200) {
 
