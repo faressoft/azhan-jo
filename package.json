@@ -1,0 +1,23 @@
+{
+  "name": "azhan-jo",
+  "version": "1.0.2",
+  "description": "Display azhan times in Amman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "azhan": "bin/azhan.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faressoft/azhan-jo.git"
+  },
+  "author": "Mohammad Fares (faressoft.com@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "console.table": "^0.4.0",
+    "request": "^2.69.0"
+  }
+}
